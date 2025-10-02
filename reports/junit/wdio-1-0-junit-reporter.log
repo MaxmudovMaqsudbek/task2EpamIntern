@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="0" skipped="0">
+  <testsuite tests="1" failures="1" errors="0" skipped="0">
+    <testcase classname="" name="">
+      <failure message="Unable to connect to &quot;http://localhost:53363/&quot;, make sure browser driver is running on that address.&#xA;It seems like the service failed to start or is rejecting any connections."/>
+    </testcase>
+  </testsuite>
+</testsuites>

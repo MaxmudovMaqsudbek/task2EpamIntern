@@ -1,63 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="4" failures="0" errors="0" skipped="0">
-  <testsuite name="Test suite" timestamp="2025-09-30T15:32:44" time="23.533" tests="4" failures="0" errors="0" skipped="0">
+<testsuites tests="10" failures="0" errors="0" skipped="0">
+  <testsuite name="Appointment Planner Dashboard" timestamp="2025-10-02T06:14:36" time="8.417" tests="10" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="Test suite"/>
+      <property name="suiteName" value="Appointment Planner Dashboard"/>
       <property name="capabilities" value="chrome.140_0_7339_208.windows"/>
       <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/test/specs/test.spec.js"/>
     </properties>
-    <testcase classname="chrome.140_0_7339_208.windows.Test_suite" name="First Test" time="6.269">
+    <testcase classname="chrome.140_0_7339_208.windows.Appointment_Planner_Dashboard" name="should open the Appointment Planner dashboard page" time="4.158">
       <system-out><![CDATA[
-COMMAND: GET /session/80c568ea5a49516be4f4651581ca934e/title - {}
+COMMAND: POST /session/a6fb1d61edca66f4104a9c9526e27108/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+RESULT: {"x":null,"y":null,"width":1920,"height":1080}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.140_0_7339_208.windows.Appointment_Planner_Dashboard" name="should have the correct page title" time="0.025">
+      <system-out><![CDATA[
+COMMAND: GET /session/a6fb1d61edca66f4104a9c9526e27108/title - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.140_0_7339_208.windows.Test_suite" name="Second Test" time="16.667">
+    <testcase classname="chrome.140_0_7339_208.windows.Appointment_Planner_Dashboard" name="should move to the Doctors section" time="0.649">
       <system-out><![CDATA[
-COMMAND: POST /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.18/click - {}
+COMMAND: POST /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.18/click - {}
 RESULT: {}
-COMMAND: GET /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.42/css/display - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.140_0_7339_208.windows.Appointment_Planner_Dashboard" name="should click the Add Doctor button" time="1.01">
+      <system-out><![CDATA[
+COMMAND: GET /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.42/css/display - {}
 RESULT: {}
-COMMAND: GET /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.42/css/display - {}
+COMMAND: GET /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.42/css/display - {}
 RESULT: {}
-COMMAND: GET /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.42/rect - {}
+COMMAND: GET /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.42/rect - {}
 RESULT: {}
-COMMAND: GET /session/80c568ea5a49516be4f4651581ca934e/window/rect - {}
+COMMAND: GET /session/a6fb1d61edca66f4104a9c9526e27108/window/rect - {}
 RESULT: {}
-COMMAND: POST /session/80c568ea5a49516be4f4651581ca934e/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1792,"y":-34,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.42"}}]}]}
-RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1792,"y":-34,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.42"}}]}]}
-COMMAND: POST /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.42/click - {}
+COMMAND: POST /session/a6fb1d61edca66f4104a9c9526e27108/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1792,"y":-34,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.42"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1792,"y":-34,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.42"}}]}]}
+COMMAND: POST /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.42/click - {}
 RESULT: {}
-COMMAND: POST /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.31/clear - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.140_0_7339_208.windows.Appointment_Planner_Dashboard" name="should enter name into input" time="1.61">
+      <system-out><![CDATA[
+COMMAND: POST /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.31/clear - {}
 RESULT: {}
-COMMAND: POST /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.31/value - {"text":"John Doe"}
+COMMAND: POST /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.31/value - {"text":"John Doe"}
 RESULT: {"text":"John Doe"}
-COMMAND: POST /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.31/clear - {}
+COMMAND: POST /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.31/clear - {}
 RESULT: {}
-COMMAND: POST /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.31/value - {"text":"Doe John Smith"}
+COMMAND: POST /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.31/value - {"text":"Doe John Smith"}
 RESULT: {"text":"Doe John Smith"}
-COMMAND: POST /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.31/value - {"text":"Michael Smith"}
+COMMAND: POST /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.31/value - {"text":"Michael Smith"}
 RESULT: {"text":"Michael Smith"}
-COMMAND: POST /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.67/click - {}
-RESULT: {}
-COMMAND: GET /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.68/text - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.140_0_7339_208.windows.Appointment_Planner_Dashboard" name="should save the doctor" time="0.165">
+      <system-out><![CDATA[
+COMMAND: POST /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.69/click - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.140_0_7339_208.windows.Test_suite" name="Close dialog" time="0.104">
+    <testcase classname="chrome.140_0_7339_208.windows.Appointment_Planner_Dashboard" name="should show email error" time="0.058">
       <system-out><![CDATA[
-COMMAND: POST /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.69/click - {}
+COMMAND: GET /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.70/text - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.140_0_7339_208.windows.Test_suite" name="Third Test" time="0.427">
+    <testcase classname="chrome.140_0_7339_208.windows.Appointment_Planner_Dashboard" name="should close the dialog" time="0.206">
       <system-out><![CDATA[
-COMMAND: GET /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.70/css/display - {}
+COMMAND: POST /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.71/click - {}
 RESULT: {}
-COMMAND: POST /session/80c568ea5a49516be4f4651581ca934e/element/f.72CCF13AA0D7B491FF8450BFAD392442.d.3B0843719EC480BE2D854BE8C7135DA1.e.70/click - {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.140_0_7339_208.windows.Appointment_Planner_Dashboard" name="should navigate to Patients section" time="0.401">
+      <system-out><![CDATA[
+COMMAND: GET /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.72/css/display - {}
 RESULT: {}
-COMMAND: DELETE /session/80c568ea5a49516be4f4651581ca934e - {}
+COMMAND: POST /session/a6fb1d61edca66f4104a9c9526e27108/element/f.8731DF0A817FEF511FB2DCED1061CD49.d.8CF8DE525D393440FE465E9F4024651B.e.72/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.140_0_7339_208.windows.Appointment_Planner_Dashboard" name="should verify patient grid has more than 7 rows" time="0.11">
+      <system-out><![CDATA[
+COMMAND: DELETE /session/a6fb1d61edca66f4104a9c9526e27108 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
