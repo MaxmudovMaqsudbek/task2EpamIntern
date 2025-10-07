@@ -19,11 +19,10 @@ exports.config = {
             'goog:chromeOptions': {
                 args: [
                     '--headless=new',
-                    '--disable-blink-features=AutomationControlled',
                     '--disable-gpu',
                     '--no-sandbox',
                     '--disable-dev-shm-usage',
-                    '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                    
                 ]
             }
         },
