@@ -4,33 +4,40 @@ exports.config = {
     
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/**/*.js'
+        './test/steps/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
     ],
 
-    maxInstances: 10,
+    maxInstances: 2,
     capabilities: [
         {
             browserName: 'chrome',
-            maxInstances: 3,
+            maxInstances: 2,
             'goog:chromeOptions': {
-                args: ['--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage']
+                args: [
+                    '--headless=new',
+                    '--disable-blink-features=AutomationControlled',
+                    '--disable-gpu',
+                    '--no-sandbox',
+                    '--disable-dev-shm-usage',
+                    '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                ]
             }
         },
-        {
-            browserName: 'firefox',
-            maxInstances: 3,
-            'moz:firefoxOptions': {
-                prefs: {
-                    'toolkit.cosmeticAnimations.enabled': false,
-                    'ui.prefersReducedMotion': 1
-                },
-                args: ['-headless', '-width=1920', '-height=1080']
-            }
-        },
+        // {
+        //     browserName: 'firefox',
+        //     maxInstances: 3,
+        //     'moz:firefoxOptions': {
+        //         prefs: {
+        //             'toolkit.cosmeticAnimations.enabled': false,
+        //             'ui.prefersReducedMotion': 1
+        //         },
+        //         args: ['-headless', '-width=1920', '-height=1080']
+        //     }
+        // },
         // {
         //     browserName: 'safari', // Runs only on macOS
         //     maxInstances: 3
@@ -48,9 +55,11 @@ exports.config = {
     waitforTimeout: 15000,
 
     connectionRetryTimeout: 180000,
-    //
-    // Default request retries count
     connectionRetryCount: 3,
+
+    specFileRetries: 2,
+    specFileRetriesDelay: 3,
+    specFileRetriesDeferred: false,
 
     framework: 'mocha',
     reporters: [
@@ -63,7 +72,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 90000
     },
 
 

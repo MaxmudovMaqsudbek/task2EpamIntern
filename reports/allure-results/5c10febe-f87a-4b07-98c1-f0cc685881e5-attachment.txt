@@ -1,0 +1,1 @@
+no-touchevents wf-museosans-n1-inactive wf-museosans-n3-inactive wf-museosans-n5-inactive wf-museosans-n7-inactive wf-museosans-n9-inactive wf-museoslab-n1-inactive wf-museoslab-n3-inactive wf-museoslab-n5-inactive wf-museoslab-n7-inactive wf-inactive

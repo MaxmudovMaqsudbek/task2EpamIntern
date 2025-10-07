@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Toggle between Light and Dark Modes" timestamp="2025-10-07T15:11:52" time="29.171" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Toggle between Light and Dark Modes"/>
+      <property name="capabilities" value="chrome.140_0_7339_210.windows"/>
+      <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/test/steps/theme_steps.js"/>
+    </properties>
+    <testcase classname="chrome.140_0_7339_210.windows.Toggle_between_Light_and_Dark_Modes" name="should toggle theme" time="29.166">
+      <system-out><![CDATA[
+COMMAND: GET /session/fa49d5c18d9821d452934aed6572beeb/element/f.B2ACB93DCF34549FC5D93B592322FF52.d.29B28A9E79D62BEA7E403ACCAD1CDFA7.e.18/css/display - {}
+RESULT: {}
+COMMAND: POST /session/fa49d5c18d9821d452934aed6572beeb/element/f.B2ACB93DCF34549FC5D93B592322FF52.d.29B28A9E79D62BEA7E403ACCAD1CDFA7.e.18/click - {}
+RESULT: {}
+COMMAND: GET /session/fa49d5c18d9821d452934aed6572beeb/title - {}
+RESULT: {}
+COMMAND: GET /session/fa49d5c18d9821d452934aed6572beeb/element/f.B2ACB93DCF34549FC5D93B592322FF52.d.29B28A9E79D62BEA7E403ACCAD1CDFA7.e.20/rect - {}
+RESULT: {}
+COMMAND: GET /session/fa49d5c18d9821d452934aed6572beeb/window/rect - {}
+RESULT: {}
+COMMAND: POST /session/fa49d5c18d9821d452934aed6572beeb/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-726,"y":-28,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.B2ACB93DCF34549FC5D93B592322FF52.d.29B28A9E79D62BEA7E403ACCAD1CDFA7.e.20"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-726,"y":-28,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.B2ACB93DCF34549FC5D93B592322FF52.d.29B28A9E79D62BEA7E403ACCAD1CDFA7.e.20"}}]}]}
+COMMAND: GET /session/fa49d5c18d9821d452934aed6572beeb/element/f.B2ACB93DCF34549FC5D93B592322FF52.d.29B28A9E79D62BEA7E403ACCAD1CDFA7.e.22/attribute/class - {}
+RESULT: {}
+COMMAND: GET /session/fa49d5c18d9821d452934aed6572beeb/element/f.B2ACB93DCF34549FC5D93B592322FF52.d.29B28A9E79D62BEA7E403ACCAD1CDFA7.e.22/attribute/class - {}
+RESULT: {}
+COMMAND: DELETE /session/fa49d5c18d9821d452934aed6572beeb - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Verify Home page title" timestamp="2025-10-07T15:12:28" time="24.96" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Verify Home page title"/>
+      <property name="capabilities" value="chrome.140_0_7339_210.windows"/>
+      <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/test/steps/title_steps.js"/>
+    </properties>
+    <testcase classname="chrome.140_0_7339_210.windows.Verify_Home_page_title" name="should have the correct page title" time="24.954">
+      <system-out><![CDATA[
+COMMAND: GET /session/e71539fb52b2da961a7b65bfdbd2e3cc/element/f.D582432C94C7F092F30DC3F676B3CC2D.d.A2503BDCB65B63E14D4EEB7D2696E401.e.16/css/display - {}
+RESULT: {}
+COMMAND: POST /session/e71539fb52b2da961a7b65bfdbd2e3cc/element/f.D582432C94C7F092F30DC3F676B3CC2D.d.A2503BDCB65B63E14D4EEB7D2696E401.e.16/click - {}
+RESULT: {}
+COMMAND: GET /session/e71539fb52b2da961a7b65bfdbd2e3cc/title - {}
+RESULT: {}
+COMMAND: GET /session/e71539fb52b2da961a7b65bfdbd2e3cc/title - {}
+RESULT: {}
+COMMAND: DELETE /session/e71539fb52b2da961a7b65bfdbd2e3cc - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

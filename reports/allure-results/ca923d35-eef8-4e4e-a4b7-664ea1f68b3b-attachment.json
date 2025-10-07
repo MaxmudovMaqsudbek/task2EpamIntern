@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.theme-switcher\"}\n  (Session info: chrome=140.0.7339.210)",
+  "stacktrace": "\tGetHandleVerifier [0x0x7ff7eaed1ea5+80197]\n\tGetHandleVerifier [0x0x7ff7eaed1f00+80288]\n\t(No symbol) [0x0x7ff7eac502fa]\n\t(No symbol) [0x0x7ff7eaca7cd7]\n\t(No symbol) [0x0x7ff7eaca7f9c]\n\t(No symbol) [0x0x7ff7eacfba87]\n\t(No symbol) [0x0x7ff7eacd03bf]\n\t(No symbol) [0x0x7ff7eacf87fb]\n\t(No symbol) [0x0x7ff7eacd0153]\n\t(No symbol) [0x0x7ff7eac98b02]\n\t(No symbol) [0x0x7ff7eac998d3]\n\tGetHandleVerifier [0x0x7ff7eb18e82d+2949837]\n\tGetHandleVerifier [0x0x7ff7eb188c5a+2926330]\n\tGetHandleVerifier [0x0x7ff7eb1a86b7+3055959]\n\tGetHandleVerifier [0x0x7ff7eaeecfde+191102]\n\tGetHandleVerifier [0x0x7ff7eaef509f+224063]\n\tGetHandleVerifier [0x0x7ff7eaedaf54+117236]\n\tGetHandleVerifier [0x0x7ff7eaedb109+117673]\n\tGetHandleVerifier [0x0x7ff7eaec1098+11064]\n\tBaseThreadInitThunk [0x0x7ff91e3c259d+29]\n\tRtlUserThreadStart [0x0x7ff91fbcaf78+40]\n"
+}
