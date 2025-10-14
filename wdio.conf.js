@@ -4,7 +4,7 @@ exports.config = {
     
     specs: [
         // ToDo: define location for spec files here
-        './test/steps/**/*.js'
+        './test/specs/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
