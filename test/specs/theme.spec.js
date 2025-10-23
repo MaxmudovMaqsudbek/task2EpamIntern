@@ -28,6 +28,6 @@ describe("Toggle between Light and Dark Modes", () => {
     await browser.pause(2000);
     
     const newClass = await body.getAttribute('class');
-    expect(newClass).not.toEqual(initialClass);
+    expect(newClass).to.not.equal(initialClass);
 });
 });

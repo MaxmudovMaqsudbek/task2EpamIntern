@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="1" failures="0" errors="0" skipped="0">
-  <testsuite name="Toggle between Light and Dark Modes" timestamp="2025-10-23T15:32:22" time="20.942" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Toggle between Light and Dark Modes" timestamp="2025-10-23T16:04:30" time="62.505" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Toggle between Light and Dark Modes"/>
       <property name="capabilities" value="chrome.141_0_7390_108.windows"/>
       <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/test/specs/theme.spec.js"/>
     </properties>
-    <testcase classname="chrome.141_0_7390_108.windows.Toggle_between_Light_and_Dark_Modes" name="should toggle theme" time="20.935">
+    <testcase classname="chrome.141_0_7390_108.windows.Toggle_between_Light_and_Dark_Modes" name="should toggle theme" time="62.498">
       <system-out><![CDATA[
-COMMAND: GET /session/2405dd54044adaa66a7ba7c121b34b83/element/f.43F98CC2E8AB726DD01320F964C87CBB.d.703A5BEB0E40DDEC6C6AB366C97B0F26.e.26/css/display - {}
+COMMAND: GET /session/d9cbbef27da21326dfb02675d5c84135/element/f.6895F7EA68FCEABA5A4466E30515CCF2.d.F5AFFB19BBF3B2B5B749E3B22E91397A.e.25/css/display - {}
 RESULT: {}
-COMMAND: POST /session/2405dd54044adaa66a7ba7c121b34b83/element/f.43F98CC2E8AB726DD01320F964C87CBB.d.703A5BEB0E40DDEC6C6AB366C97B0F26.e.26/click - {}
+COMMAND: POST /session/d9cbbef27da21326dfb02675d5c84135/element/f.6895F7EA68FCEABA5A4466E30515CCF2.d.F5AFFB19BBF3B2B5B749E3B22E91397A.e.25/click - {}
 RESULT: {}
-COMMAND: GET /session/2405dd54044adaa66a7ba7c121b34b83/title - {}
+COMMAND: GET /session/d9cbbef27da21326dfb02675d5c84135/title - {}
 RESULT: {}
-COMMAND: GET /session/2405dd54044adaa66a7ba7c121b34b83/element/f.43F98CC2E8AB726DD01320F964C87CBB.d.703A5BEB0E40DDEC6C6AB366C97B0F26.e.29/rect - {}
+COMMAND: GET /session/d9cbbef27da21326dfb02675d5c84135/element/f.6895F7EA68FCEABA5A4466E30515CCF2.d.F5AFFB19BBF3B2B5B749E3B22E91397A.e.27/rect - {}
 RESULT: {}
-COMMAND: GET /session/2405dd54044adaa66a7ba7c121b34b83/window/rect - {}
+COMMAND: GET /session/d9cbbef27da21326dfb02675d5c84135/window/rect - {}
 RESULT: {}
-COMMAND: POST /session/2405dd54044adaa66a7ba7c121b34b83/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1920,"y":0,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.43F98CC2E8AB726DD01320F964C87CBB.d.703A5BEB0E40DDEC6C6AB366C97B0F26.e.29"}}]}]}
-RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1920,"y":0,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.43F98CC2E8AB726DD01320F964C87CBB.d.703A5BEB0E40DDEC6C6AB366C97B0F26.e.29"}}]}]}
-COMMAND: GET /session/2405dd54044adaa66a7ba7c121b34b83/element/f.43F98CC2E8AB726DD01320F964C87CBB.d.703A5BEB0E40DDEC6C6AB366C97B0F26.e.31/attribute/class - {}
+COMMAND: POST /session/d9cbbef27da21326dfb02675d5c84135/actions - {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1920,"y":0,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.6895F7EA68FCEABA5A4466E30515CCF2.d.F5AFFB19BBF3B2B5B749E3B22E91397A.e.27"}}]}]}
+RESULT: {"actions":[{"id":"action1","type":"wheel","parameters":{},"actions":[{"type":"scroll","x":-1920,"y":0,"deltaX":0,"deltaY":0,"duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"f.6895F7EA68FCEABA5A4466E30515CCF2.d.F5AFFB19BBF3B2B5B749E3B22E91397A.e.27"}}]}]}
+COMMAND: GET /session/d9cbbef27da21326dfb02675d5c84135/element/f.6895F7EA68FCEABA5A4466E30515CCF2.d.F5AFFB19BBF3B2B5B749E3B22E91397A.e.29/attribute/class - {}
 RESULT: {}
-COMMAND: GET /session/2405dd54044adaa66a7ba7c121b34b83/element/f.43F98CC2E8AB726DD01320F964C87CBB.d.703A5BEB0E40DDEC6C6AB366C97B0F26.e.31/attribute/class - {}
+COMMAND: GET /session/d9cbbef27da21326dfb02675d5c84135/element/f.6895F7EA68FCEABA5A4466E30515CCF2.d.F5AFFB19BBF3B2B5B749E3B22E91397A.e.29/attribute/class - {}
 RESULT: {}
-COMMAND: DELETE /session/2405dd54044adaa66a7ba7c121b34b83 - {}
+COMMAND: DELETE /session/d9cbbef27da21326dfb02675d5c84135 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
