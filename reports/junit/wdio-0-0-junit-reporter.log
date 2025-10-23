@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="2" failures="0" errors="0" skipped="0">
-  <testsuite name="Verify language translation feature" timestamp="2025-10-07T16:19:10" time="89.541" tests="2" failures="0" errors="0" skipped="0">
+  <testsuite name="Verify language translation feature" timestamp="2025-10-23T15:31:20" time="56.357" tests="2" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Verify language translation feature"/>
-      <property name="capabilities" value="chrome.140_0_7339_210.windows"/>
-      <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/test/steps/language.steps.js"/>
+      <property name="capabilities" value="chrome.141_0_7390_108.windows"/>
+      <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/test/specs/language.spec.js"/>
     </properties>
-    <testcase classname="chrome.140_0_7339_210.windows.Verify_language_translation_feature" name="should open language selector and display available languages" time="59.851">
+    <testcase classname="chrome.141_0_7390_108.windows.Verify_language_translation_feature" name="should open language selector and display available languages" time="30.557">
       <system-out><![CDATA[
-COMMAND: POST /session/50e40eca6e7756171f80f73c54ddcdaf/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: POST /session/d49e0ad89cb9a43bc2cce292c73089c8/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
 RESULT: {"x":null,"y":null,"width":1920,"height":1080}
-COMMAND: GET /session/50e40eca6e7756171f80f73c54ddcdaf/element/f.F221DB08C57F93505E9DDF3004835172.d.7A7821CE9B7524F6DDFB21A04866E884.e.23/css/display - {}
+COMMAND: GET /session/d49e0ad89cb9a43bc2cce292c73089c8/element/f.5E0E9F58CAA2B94F964DCB15D699B1BB.d.3AEBCE63933565068BEA3615C6278EBA.e.28/css/display - {}
 RESULT: {}
-COMMAND: POST /session/50e40eca6e7756171f80f73c54ddcdaf/element/f.F221DB08C57F93505E9DDF3004835172.d.7A7821CE9B7524F6DDFB21A04866E884.e.23/click - {}
+COMMAND: POST /session/d49e0ad89cb9a43bc2cce292c73089c8/element/f.5E0E9F58CAA2B94F964DCB15D699B1BB.d.3AEBCE63933565068BEA3615C6278EBA.e.28/click - {}
 RESULT: {}
-COMMAND: GET /session/50e40eca6e7756171f80f73c54ddcdaf/title - {}
+COMMAND: GET /session/d49e0ad89cb9a43bc2cce292c73089c8/title - {}
+COMMAND: GET /session/d49e0ad89cb9a43bc2cce292c73089c8/element/f.5E0E9F58CAA2B94F964DCB15D699B1BB.d.3AEBCE63933565068BEA3615C6278EBA.e.34/css/display - {}
 RESULT: {}
-COMMAND: GET /session/50e40eca6e7756171f80f73c54ddcdaf/element/f.F221DB08C57F93505E9DDF3004835172.d.7A7821CE9B7524F6DDFB21A04866E884.e.25/css/display - {}
+RESULT: {}
+COMMAND: GET /session/d49e0ad89cb9a43bc2cce292c73089c8/element/f.5E0E9F58CAA2B94F964DCB15D699B1BB.d.3AEBCE63933565068BEA3615C6278EBA.e.36/css/display - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.140_0_7339_210.windows.Verify_language_translation_feature" name="should change language to Deutsch and update page" time="29.682">
+    <testcase classname="chrome.141_0_7390_108.windows.Verify_language_translation_feature" name="should change language to Deutsch and update page" time="25.798">
       <system-out><![CDATA[
-COMMAND: POST /session/50e40eca6e7756171f80f73c54ddcdaf/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: POST /session/d49e0ad89cb9a43bc2cce292c73089c8/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
 RESULT: {"x":null,"y":null,"width":1920,"height":1080}
-COMMAND: GET /session/50e40eca6e7756171f80f73c54ddcdaf/title - {}
+COMMAND: GET /session/d49e0ad89cb9a43bc2cce292c73089c8/title - {}
+COMMAND: GET /session/d49e0ad89cb9a43bc2cce292c73089c8/element/f.5E0E9F58CAA2B94F964DCB15D699B1BB.d.33F46BAF543B08CD1127406BC51443A6.e.57/css/display - {}
 RESULT: {}
-COMMAND: GET /session/50e40eca6e7756171f80f73c54ddcdaf/element/f.F221DB08C57F93505E9DDF3004835172.d.7D0A4D5905EF2B309BF0F14A1749E8F0.e.51/css/display - {}
 RESULT: {}
-COMMAND: POST /session/50e40eca6e7756171f80f73c54ddcdaf/element/f.F221DB08C57F93505E9DDF3004835172.d.7D0A4D5905EF2B309BF0F14A1749E8F0.e.51/click - {}
+COMMAND: GET /session/d49e0ad89cb9a43bc2cce292c73089c8/element/f.5E0E9F58CAA2B94F964DCB15D699B1BB.d.33F46BAF543B08CD1127406BC51443A6.e.62/css/display - {}
 RESULT: {}
-COMMAND: GET /session/50e40eca6e7756171f80f73c54ddcdaf/url - {}
+COMMAND: POST /session/d49e0ad89cb9a43bc2cce292c73089c8/element/f.5E0E9F58CAA2B94F964DCB15D699B1BB.d.33F46BAF543B08CD1127406BC51443A6.e.62/click - {}
 RESULT: {}
-COMMAND: GET /session/50e40eca6e7756171f80f73c54ddcdaf/url - {}
+COMMAND: GET /session/d49e0ad89cb9a43bc2cce292c73089c8/url - {}
 RESULT: {}
-COMMAND: DELETE /session/50e40eca6e7756171f80f73c54ddcdaf - {}
+COMMAND: GET /session/d49e0ad89cb9a43bc2cce292c73089c8/url - {}
+RESULT: {}
+COMMAND: DELETE /session/d49e0ad89cb9a43bc2cce292c73089c8 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

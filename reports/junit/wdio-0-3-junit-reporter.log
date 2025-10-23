@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="1" failures="0" errors="0" skipped="0">
-  <testsuite name="Verify Home page title" timestamp="2025-10-07T16:21:15" time="16.108" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Verify Home page title" timestamp="2025-10-23T15:32:50" time="25.087" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Verify Home page title"/>
-      <property name="capabilities" value="chrome.140_0_7339_210.windows"/>
-      <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/test/steps/title_steps.js"/>
+      <property name="capabilities" value="chrome.141_0_7390_108.windows"/>
+      <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/test/specs/title.spec.js"/>
     </properties>
-    <testcase classname="chrome.140_0_7339_210.windows.Verify_Home_page_title" name="should have the correct page title" time="16.105">
+    <testcase classname="chrome.141_0_7390_108.windows.Verify_Home_page_title" name="should have the correct page title" time="25.08">
       <system-out><![CDATA[
-COMMAND: GET /session/4634accc09bde54a456275aab786d352/element/f.6483015955B804E7D545FDB5CFD24983.d.8E2A72F4C440D3B8CB91D8AB7B0D8BB1.e.15/css/display - {}
+COMMAND: GET /session/09c8a23655445cf0a0fc1d8d6a3eb62b/element/f.D34BB7670593313AC89854A7312234CC.d.5747CE284D9ED4A5296F17350961200A.e.25/css/display - {}
 RESULT: {}
-COMMAND: POST /session/4634accc09bde54a456275aab786d352/element/f.6483015955B804E7D545FDB5CFD24983.d.8E2A72F4C440D3B8CB91D8AB7B0D8BB1.e.15/click - {}
+COMMAND: POST /session/09c8a23655445cf0a0fc1d8d6a3eb62b/element/f.D34BB7670593313AC89854A7312234CC.d.5747CE284D9ED4A5296F17350961200A.e.25/click - {}
 RESULT: {}
-COMMAND: GET /session/4634accc09bde54a456275aab786d352/title - {}
+COMMAND: GET /session/09c8a23655445cf0a0fc1d8d6a3eb62b/title - {}
 RESULT: {}
-COMMAND: GET /session/4634accc09bde54a456275aab786d352/title - {}
+COMMAND: GET /session/09c8a23655445cf0a0fc1d8d6a3eb62b/title - {}
 RESULT: {}
-COMMAND: DELETE /session/4634accc09bde54a456275aab786d352 - {}
+COMMAND: DELETE /session/09c8a23655445cf0a0fc1d8d6a3eb62b - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

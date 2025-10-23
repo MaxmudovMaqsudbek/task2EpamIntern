@@ -19,9 +19,21 @@ exports.config = {
             'goog:chromeOptions': {
                 args: [
                     '--headless=new',
-                    '--disable-gpu',
+                    '--window-size=1920,1080',
                     '--no-sandbox',
                     '--disable-dev-shm-usage',
+                    '--disable-extensions',
+                    '--disable-gpu',
+                    '--disable-infobars',
+                    '--disable-popup-blocking',
+                    '--disable-animations',
+                    '--disable-background-timer-throttling',
+                    '--disable-renderer-backgrounding',
+                    '--disable-backgrounding-occluded-windows',
+                    '--force-color-profile=srgb',
+                    '--disable-blink-features=AutomationControlled',
+                    '--start-maximized',
+                    '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0 Safari/537.36 Edg/115.0.1901.188'
                     
                 ]
             }

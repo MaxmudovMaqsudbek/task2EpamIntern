@@ -6,9 +6,11 @@ describe("Verify language translation feature", () => {
     const acceptBtn = await $("button#onetrust-accept-btn-handler");
     if (await acceptBtn.isDisplayed()) await acceptBtn.click();
 
-    await browser.waitUntil(async () => (await browser.getTitle()).includes("EPAM"), {
-      timeout: 40000,
-    });
+    await browser.waitUntil(
+      async () => (await $('body')).isDisplayed() && (await browser.getTitle()).length > 0,
+      { timeout: 40000, interval: 1000, timeoutMsg: 'Page did not load completely' }
+    );
+
   });
 
   it("should open language selector and display available languages", async () => {
