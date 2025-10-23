@@ -10,6 +10,10 @@ exports.config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
+    before: function () {
+        require("./test/setup.js");
+    }
+,
 
     maxInstances: 2,
     capabilities: [

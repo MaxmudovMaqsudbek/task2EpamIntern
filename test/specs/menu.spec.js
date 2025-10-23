@@ -37,7 +37,7 @@ describe("Verify the global navigation menu across all pages", () => {
       await navMenu.waitForDisplayed({ timeout: 10000 });
       
       const isVisible = await navMenu.isDisplayed();
-      expect(isVisible).toBe(true);
+      expect(isVisible).to.be.true;
     });
   }
 
@@ -56,6 +56,25 @@ describe("Verify the global navigation menu across all pages", () => {
     }, { timeout: 15000 });
 
     const title = await browser.getTitle();
-    expect(title).toMatch(/Insights/i);
+    expect(title).to.match(/Insights/i);
 });
+
+it("should navigate to Careers page", async () => {
+    await loadPage("https://www.epam.com/");
+    await browser.pause(2000);
+    
+    const careersLink = await $("a[href='/careers']");
+    await careersLink.waitForExist({ timeout: 10000 });
+    
+    await browser.execute((el) => el.click(), careersLink);
+    
+    await browser.waitUntil(async () => {
+      const url = await browser.getUrl();
+      return url.includes('/careers');
+    }, { timeout: 15000 });
+
+    const title = await browser.getTitle();
+    title.should.match(/Careers/i);
+});
+  
 });

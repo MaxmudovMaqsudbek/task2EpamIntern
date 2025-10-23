@@ -18,6 +18,6 @@ describe("Verify Home page title", () => {
 
   it("should have the correct page title", async () => {
     const title = await browser.getTitle();
-    expect(title).toContain('EPAM');
+    expect(title).to.include('EPAM');
   });
 });
