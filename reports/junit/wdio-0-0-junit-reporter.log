@@ -1,101 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="3" failures="3" errors="0" skipped="0">
-  <testsuite name="Verify language translation feature" timestamp="2025-10-23T16:23:31" time="48.765" tests="3" failures="3" errors="0" skipped="0">
+<testsuites tests="3" failures="0" errors="0" skipped="0">
+  <testsuite name="Verify language translation feature" timestamp="2025-11-03T03:51:12" time="46.887" tests="3" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Verify language translation feature"/>
-      <property name="capabilities" value="chrome.141_0_7390_108.windows"/>
-      <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/test/specs/language.spec.js"/>
+      <property name="capabilities" value="chrome.142_0_7444_60.windows"/>
+      <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/src/specs/language.spec.js"/>
     </properties>
-    <testcase classname="chrome.141_0_7390_108.windows.Verify_language_translation_feature" name="should open language selector and display available languages" time="22.234">
-      <failure message="Cannot read properties of undefined (reading 'be')"/>
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_language_translation_feature" name="should open language selector and display available languages" time="18.375">
       <system-out><![CDATA[
-COMMAND: POST /session/166e12173c409280a9200252d8196c6f/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: POST /session/3bc60f07993be3b0ac88eb46feb5aa18/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
 RESULT: {"x":null,"y":null,"width":1920,"height":1080}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.3D2237A32097655F11818DA1E88B1108.e.25/css/display - {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.4A71C42CD57C13E3A52C222770CBF8C4.e.24/css/display - {}
 RESULT: {}
-COMMAND: POST /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.3D2237A32097655F11818DA1E88B1108.e.25/click - {}
+COMMAND: POST /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.4A71C42CD57C13E3A52C222770CBF8C4.e.24/click - {}
 RESULT: {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/title - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.3D2237A32097655F11818DA1E88B1108.e.27/css/display - {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/title - {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.4A71C42CD57C13E3A52C222770CBF8C4.e.29/css/display - {}
 RESULT: {}
 RESULT: {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.3D2237A32097655F11818DA1E88B1108.e.29/css/display - {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.4A71C42CD57C13E3A52C222770CBF8C4.e.32/css/display - {}
 RESULT: {}
 ]]></system-out>
-      <system-err><![CDATA[
-TypeError: Cannot read properties of undefined (reading 'be')
-    at Context.<anonymous> (C:\Users\user\Desktop\task2EpamIntern\test\specs\language.spec.js:29:28)
-    at async Context.executeAsync (C:\Users\user\Desktop\task2EpamIntern\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\index.js:1105:20)
-    at async Context.testFrameworkFnWrapper (C:\Users\user\Desktop\task2EpamIntern\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\index.js:1177:14)
-]]></system-err>
     </testcase>
-    <testcase classname="chrome.141_0_7390_108.windows.Verify_language_translation_feature" name="should contain English in the language list" time="8.886">
-      <failure message="object is not iterable (cannot read property Symbol(Symbol.iterator))"/>
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_language_translation_feature" name="should contain Polska Polski in the language list" time="10.526">
       <system-out><![CDATA[
-COMMAND: POST /session/166e12173c409280a9200252d8196c6f/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
+COMMAND: POST /session/3bc60f07993be3b0ac88eb46feb5aa18/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
 RESULT: {"x":null,"y":null,"width":1920,"height":1080}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/title - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.53D62BD8E9821BC13DD3F670AD29CDC7.e.50/css/display - {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/title - {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.51/css/display - {}
 RESULT: {}
 RESULT: {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.53D62BD8E9821BC13DD3F670AD29CDC7.e.52/text - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.53D62BD8E9821BC13DD3F670AD29CDC7.e.53/text - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.53D62BD8E9821BC13DD3F670AD29CDC7.e.55/text - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.53D62BD8E9821BC13DD3F670AD29CDC7.e.56/text - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.53D62BD8E9821BC13DD3F670AD29CDC7.e.57/text - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.53D62BD8E9821BC13DD3F670AD29CDC7.e.54/text - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.53D62BD8E9821BC13DD3F670AD29CDC7.e.58/text - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.53D62BD8E9821BC13DD3F670AD29CDC7.e.59/text - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.53D62BD8E9821BC13DD3F670AD29CDC7.e.60/text - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.53D62BD8E9821BC13DD3F670AD29CDC7.e.61/text - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.53D62BD8E9821BC13DD3F670AD29CDC7.e.62/text - {}
+COMMAND: POST /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.52/click - {}
+RESULT: {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.54/text - {}
+RESULT: {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.55/text - {}
+RESULT: {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.56/text - {}
+RESULT: {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.57/text - {}
+RESULT: {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.58/text - {}
+RESULT: {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.59/text - {}
+RESULT: {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.60/text - {}
+RESULT: {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.61/text - {}
+RESULT: {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.62/text - {}
+RESULT: {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.63/text - {}
+RESULT: {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.34E18F9BE2B27BE50FACF90F0A3AC2A3.e.64/text - {}
+RESULT: {}
 ]]></system-out>
-      <system-err><![CDATA[
-TypeError: object is not iterable (cannot read property Symbol(Symbol.iterator))
-    at Function.all (<anonymous>)
-    at Context.<anonymous> (C:\Users\user\Desktop\task2EpamIntern\test\specs\language.spec.js:38:37)
-    at async Context.executeAsync (C:\Users\user\Desktop\task2EpamIntern\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\index.js:1105:20)
-    at async Context.testFrameworkFnWrapper (C:\Users\user\Desktop\task2EpamIntern\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\index.js:1177:14)
-]]></system-err>
     </testcase>
-    <testcase classname="chrome.141_0_7390_108.windows.Verify_language_translation_feature" name="should change language to Deutsch and update page" time="17.612">
-      <failure message="Cannot read properties of undefined (reading 'include')"/>
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_language_translation_feature" name="should change language to Deutsch and update page" time="17.976">
       <system-out><![CDATA[
-COMMAND: POST /session/166e12173c409280a9200252d8196c6f/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
-RESULT: {}
-RESULT: {}
-RESULT: {}
-RESULT: {}
-RESULT: {}
-RESULT: {}
-RESULT: {}
-RESULT: {}
-RESULT: {}
-RESULT: {}
-RESULT: {}
+COMMAND: POST /session/3bc60f07993be3b0ac88eb46feb5aa18/window/rect - {"x":null,"y":null,"width":1920,"height":1080}
 RESULT: {"x":null,"y":null,"width":1920,"height":1080}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/title - {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.46CFC6651B2C9226C35612D14812B1E4.e.75/css/display - {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/title - {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.DC9DA2155F9E2B73DFFD9328C62C30BC.e.73/css/display - {}
 RESULT: {}
 RESULT: {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.46CFC6651B2C9226C35612D14812B1E4.e.79/css/display - {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.DC9DA2155F9E2B73DFFD9328C62C30BC.e.75/css/display - {}
 RESULT: {}
-COMMAND: POST /session/166e12173c409280a9200252d8196c6f/element/f.F59A510427640C9DB58622E91E6A65FA.d.46CFC6651B2C9226C35612D14812B1E4.e.79/click - {}
+COMMAND: POST /session/3bc60f07993be3b0ac88eb46feb5aa18/element/f.63509C52D1BE491E9BE8FA0B9F7E342A.d.DC9DA2155F9E2B73DFFD9328C62C30BC.e.75/click - {}
 RESULT: {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/url - {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/url - {}
 RESULT: {}
-COMMAND: GET /session/166e12173c409280a9200252d8196c6f/url - {}
+COMMAND: GET /session/3bc60f07993be3b0ac88eb46feb5aa18/url - {}
 RESULT: {}
-COMMAND: DELETE /session/166e12173c409280a9200252d8196c6f - {}
+COMMAND: DELETE /session/3bc60f07993be3b0ac88eb46feb5aa18 - {}
 RESULT: {}
 ]]></system-out>
-      <system-err><![CDATA[
-TypeError: Cannot read properties of undefined (reading 'include')
-    at Context.<anonymous> (C:\Users\user\Desktop\task2EpamIntern\test\specs\language.spec.js:62:16)
-    at async Context.executeAsync (C:\Users\user\Desktop\task2EpamIntern\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\index.js:1105:20)
-    at async Context.testFrameworkFnWrapper (C:\Users\user\Desktop\task2EpamIntern\node_modules\@wdio\mocha-framework\node_modules\@wdio\utils\build\index.js:1177:14)
-]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>

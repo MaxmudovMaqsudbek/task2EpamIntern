@@ -1,6 +1,7 @@
+const { pages } = require('../po');
 describe("Toggle between Light and Dark Modes", () => {
   beforeEach(async () => {
-    await browser.url("https://www.epam.com/");
+    await pages("about").open();
     
     try {
       const acceptBtn = await $('button#onetrust-accept-btn-handler');

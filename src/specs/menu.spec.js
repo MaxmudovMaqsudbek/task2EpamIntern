@@ -14,7 +14,7 @@ describe("Verify the global navigation menu across all pages", () => {
     
     try {
       const acceptBtn = await $('button#onetrust-accept-btn-handler');
-      await acceptBtn.waitForDisplayed({ timeout: 3000 });
+      await acceptBtn.waitForDisplayed({ timeout: 5000 });
       await acceptBtn.click();
       await browser.pause(500);
     } catch (e) {}

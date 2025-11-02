@@ -4,14 +4,15 @@ exports.config = {
     
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/**/*.js'
+        './../specs/**/*.js'
     ],
+    baseUrl:'https://www.epam.com',
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
     ],
     before: function () {
-        require("./test/setup.js");
+        require("./setup");
     }
 ,
 
@@ -22,22 +23,6 @@ exports.config = {
             maxInstances: 2,
             'goog:chromeOptions': {
                 args: [
-                    '--headless=new',
-                    '--window-size=1920,1080',
-                    '--no-sandbox',
-                    '--disable-dev-shm-usage',
-                    '--disable-extensions',
-                    '--disable-gpu',
-                    '--disable-infobars',
-                    '--disable-popup-blocking',
-                    '--disable-animations',
-                    '--disable-background-timer-throttling',
-                    '--disable-renderer-backgrounding',
-                    '--disable-backgrounding-occluded-windows',
-                    '--force-color-profile=srgb',
-                    '--disable-blink-features=AutomationControlled',
-                    '--start-maximized',
-                    '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0 Safari/537.36 Edg/115.0.1901.188'
                     
                 ]
             }

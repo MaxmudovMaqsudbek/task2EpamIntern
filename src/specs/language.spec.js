@@ -1,11 +1,18 @@
+const {pages} = require('../po');
+
 describe("Verify language translation feature", () => {
   beforeEach(async () => {
     await browser.setWindowSize(1920, 1080);
-    await browser.url("https://www.epam.com/", { waitUntil: "domcontentloaded", timeout: 90000 });
+    await pages("about").open();
 
-    const acceptBtn = await $("button#onetrust-accept-btn-handler");
-    if (await acceptBtn.isDisplayed()) await acceptBtn.click();
-
+       try {
+          const acceptBtn = await $("button#onetrust-accept-btn-handler");
+          await acceptBtn.waitForDisplayed({ timeout: 5000 });
+          await acceptBtn.click();
+          await browser.pause(500);
+        } catch (e) {
+          
+        }
     await browser.waitUntil(
       async () => (await $('body')).isDisplayed() && (await browser.getTitle()).length > 0,
       { timeout: 40000, interval: 1000, timeoutMsg: 'Page did not load completely' }
@@ -27,16 +34,23 @@ describe("Verify language translation feature", () => {
     expect(items.length).to.be.greaterThan(0);
   });
   
-  it("should contain English in the language list", async () => {
+  it("should contain 'Polska (Polski)' in the language list", async () => {
     const langButton = await $("button.location-selector__button");
     await langButton.waitForExist({ timeout: 30000 });
-    await browser.execute(el => el.click(), langButton);
+    await langButton.click();
 
-    const itemTexts = await $$("ul.location-selector__list li.location-selector__item a");
-    const languages = await Promise.all(itemTexts.map(item => item.getText()));
+    await $("ul.location-selector__list").waitForExist({ timeout: 10000 });
+    const items = await $$("ul.location-selector__list li.location-selector__item a");
+    const languages = [];
+    for (const item of items) {
+      languages.push(await item.getText());
+    }
 
-    assert.includeMembers(languages, ["English"], "English should be available in the language list");
+    console.log("Languages found:", languages);
+    const hasPolish = languages.some(lang => lang.includes('Polska (Polski)'));
+    await expect(hasPolish).to.be.true;
   });
+
 
 
 

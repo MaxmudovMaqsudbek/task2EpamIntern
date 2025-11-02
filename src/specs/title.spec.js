@@ -1,11 +1,13 @@
+const { pages } = require('../po');
 describe("Verify Home page title", () => {
 
   beforeEach(async () => {
-    await browser.url("https://www.epam.com/");
+    await pages("about").open();
     
     try {
       const acceptBtn = await $('button#onetrust-accept-btn-handler');
-      await acceptBtn.waitForDisplayed({ timeout: 5000 });
+      await acceptBtn.waitForDisplayed();
+      await acceptBtn.waitForClickable()()
       await acceptBtn.click();
     } catch (e) {}
     
