@@ -64,8 +64,8 @@ exports.config = {
     framework: 'mocha',
     reporters: [
         'spec',
-        ['junit', {outputDir:'./reports/junit'}],
-        ['allure', {outputDir:'./reports/allure-results'}]
+        ['junit', {outputDir:'../../reports/junit'}],
+        ['allure', {outputDir:'../../reports/allure-results'}]
     ],
 
     // Options to be passed to Mocha.
