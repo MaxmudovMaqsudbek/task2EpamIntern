@@ -2,13 +2,10 @@ const { pages } = require('../po');
 describe("Verify Home page title", () => {
 
   beforeEach(async () => {
-    await pages("about").open();
+        await pages("about").open();
     
     try {
-      const acceptBtn = await $('button#onetrust-accept-btn-handler');
-      await acceptBtn.waitForDisplayed();
-      await acceptBtn.waitForClickable()()
-      await acceptBtn.click();
+        await pages("about").acceptCookies();
     } catch (e) {}
     
     

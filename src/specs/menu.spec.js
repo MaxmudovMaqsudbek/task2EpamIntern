@@ -13,10 +13,7 @@ describe("Verify the global navigation menu across all pages", () => {
     await browser.url(url);
     
     try {
-      const acceptBtn = await $('button#onetrust-accept-btn-handler');
-      await acceptBtn.waitForDisplayed({ timeout: 5000 });
-      await acceptBtn.click();
-      await browser.pause(500);
+      await pages("about").acceptCookies();
     } catch (e) {}
     
     await browser.waitUntil(async () => {

@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="1" failures="0" errors="0" skipped="0">
-  <testsuite name="Verify Home page title" timestamp="2025-11-03T03:52:25" time="41.474" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Verify Home page title" timestamp="2025-11-03T04:15:09" time="7.028" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Verify Home page title"/>
       <property name="capabilities" value="chrome.142_0_7444_60.windows"/>
       <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/src/specs/title.spec.js"/>
     </properties>
-    <testcase classname="chrome.142_0_7444_60.windows.Verify_Home_page_title" name="should have the correct page title" time="41.469">
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_Home_page_title" name="should have the correct page title" time="7.022">
       <system-out><![CDATA[
-COMMAND: GET /session/585bff4b9cdc66f2694d1c2157d64b6a/title - {}
+COMMAND: GET /session/e0e2932616f5d8e90760f10c65b1f286/element/f.D6B32642B55780E821B364168BEE618C.d.2FC7DA8B701DDABC705FB2E1E685FF61.e.12/css/display - {}
 RESULT: {}
-COMMAND: GET /session/585bff4b9cdc66f2694d1c2157d64b6a/title - {}
+COMMAND: POST /session/e0e2932616f5d8e90760f10c65b1f286/element/f.D6B32642B55780E821B364168BEE618C.d.2FC7DA8B701DDABC705FB2E1E685FF61.e.12/click - {}
 RESULT: {}
-COMMAND: DELETE /session/585bff4b9cdc66f2694d1c2157d64b6a - {}
+COMMAND: GET /session/e0e2932616f5d8e90760f10c65b1f286/title - {}
+RESULT: {}
+COMMAND: GET /session/e0e2932616f5d8e90760f10c65b1f286/title - {}
+RESULT: {}
+COMMAND: DELETE /session/e0e2932616f5d8e90760f10c65b1f286 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

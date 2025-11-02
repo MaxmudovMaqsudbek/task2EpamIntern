@@ -1,13 +1,10 @@
 const { pages } = require('../po');
 describe("Toggle between Light and Dark Modes", () => {
   beforeEach(async () => {
-    await pages("about").open();
+        await pages("about").open();
     
     try {
-      const acceptBtn = await $('button#onetrust-accept-btn-handler');
-      await acceptBtn.waitForDisplayed({ timeout: 5000 });
-      await acceptBtn.click();
-      await browser.pause(1000);
+        await pages("about").acceptCookies();
     } catch (e) {}
     
     await browser.waitUntil(async () => {

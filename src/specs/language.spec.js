@@ -5,12 +5,9 @@ describe("Verify language translation feature", () => {
     await browser.setWindowSize(1920, 1080);
     await pages("about").open();
 
-       try {
-          const acceptBtn = await $("button#onetrust-accept-btn-handler");
-          await acceptBtn.waitForDisplayed({ timeout: 5000 });
-          await acceptBtn.click();
-          await browser.pause(500);
-        } catch (e) {
+  try {
+    await pages("about").acceptCookies();
+  } catch (e) {
           
         }
     await browser.waitUntil(
