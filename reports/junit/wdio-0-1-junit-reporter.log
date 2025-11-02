@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="8" failures="0" errors="0" skipped="0">
-  <testsuite name="Verify the global navigation menu across all pages" timestamp="2025-11-03T04:14:07" time="55.555" tests="8" failures="0" errors="0" skipped="0">
+  <testsuite name="Verify the global navigation menu across all pages" timestamp="2025-11-03T04:30:48" time="65.764" tests="8" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Verify the global navigation menu across all pages"/>
       <property name="capabilities" value="chrome.142_0_7444_60.windows"/>
       <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/src/specs/menu.spec.js"/>
     </properties>
-    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should display navigation menu on Home page" time="11.029">
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should display navigation menu on Home page" time="18.703">
       <system-out><![CDATA[
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/title - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/title - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/element/f.774E58CEE08BECCE8211A90615601383.d.F338A96C19F154976B44F9ECAE945E3B.e.16/css/display - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/element/f.D0B80ECAB6D2E4053D1A1A412522C9D1.d.AB499F037DE0D816047D725B5603F3F9.e.24/css/display - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/element/f.774E58CEE08BECCE8211A90615601383.d.F338A96C19F154976B44F9ECAE945E3B.e.16/css/display - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/element/f.D0B80ECAB6D2E4053D1A1A412522C9D1.d.AB499F037DE0D816047D725B5603F3F9.e.24/css/display - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should display navigation menu on Insights page" time="7.163">
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should display navigation menu on Insights page" time="11.737">
       <system-out><![CDATA[
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/title - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/title - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/element/f.774E58CEE08BECCE8211A90615601383.d.8B0988699D95E60DF7037C9AC187A872.e.32/css/display - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/element/f.D0B80ECAB6D2E4053D1A1A412522C9D1.d.D5517514F6876A8E967AEDFAF61C4694.e.41/css/display - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/element/f.774E58CEE08BECCE8211A90615601383.d.8B0988699D95E60DF7037C9AC187A872.e.32/css/display - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/element/f.D0B80ECAB6D2E4053D1A1A412522C9D1.d.D5517514F6876A8E967AEDFAF61C4694.e.41/css/display - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should display navigation menu on Services page" time="9.498">
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should display navigation menu on Services page" time="8.059">
       <system-out><![CDATA[
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/title - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/title - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/element/f.774E58CEE08BECCE8211A90615601383.d.F4000FD9ADD26EF27C2D1BBE1936A56E.e.47/css/display - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/element/f.D0B80ECAB6D2E4053D1A1A412522C9D1.d.D3DDA37B934D1CE223CABD0037746A79.e.57/css/display - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/element/f.774E58CEE08BECCE8211A90615601383.d.F4000FD9ADD26EF27C2D1BBE1936A56E.e.47/css/display - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/element/f.D0B80ECAB6D2E4053D1A1A412522C9D1.d.D3DDA37B934D1CE223CABD0037746A79.e.57/css/display - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should display navigation menu on Industries page" time="3.621">
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should display navigation menu on Industries page" time="2.988">
       <system-out><![CDATA[
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/title - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/title - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/element/f.774E58CEE08BECCE8211A90615601383.d.1F14B3076DC37B1F0E8783CCB138B269.e.60/css/display - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/element/f.D0B80ECAB6D2E4053D1A1A412522C9D1.d.C80410F555E4D45CDBF7A91E95B7B679.e.70/css/display - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/element/f.774E58CEE08BECCE8211A90615601383.d.1F14B3076DC37B1F0E8783CCB138B269.e.60/css/display - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/element/f.D0B80ECAB6D2E4053D1A1A412522C9D1.d.C80410F555E4D45CDBF7A91E95B7B679.e.70/css/display - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should display navigation menu on About page" time="4.61">
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should display navigation menu on About page" time="5.009">
       <system-out><![CDATA[
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/title - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/title - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/element/f.774E58CEE08BECCE8211A90615601383.d.3F5B9C0BC3BC2372E526E97DFDF1C5AE.e.74/css/display - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/element/f.D0B80ECAB6D2E4053D1A1A412522C9D1.d.99968440F25B773FE0A9E81A994C6602.e.86/css/display - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/element/f.774E58CEE08BECCE8211A90615601383.d.3F5B9C0BC3BC2372E526E97DFDF1C5AE.e.74/css/display - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/element/f.D0B80ECAB6D2E4053D1A1A412522C9D1.d.99968440F25B773FE0A9E81A994C6602.e.86/css/display - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should display navigation menu on Careers page" time="7.979">
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should display navigation menu on Careers page" time="5.987">
       <system-out><![CDATA[
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/title - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/title - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/element/f.774E58CEE08BECCE8211A90615601383.d.486F0529B4AAA7FE99D744839CFCA657.e.103/css/display - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/element/f.D0B80ECAB6D2E4053D1A1A412522C9D1.d.2E9FA3563DEEDA53E22812F58A1E25AD.e.116/css/display - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/element/f.774E58CEE08BECCE8211A90615601383.d.486F0529B4AAA7FE99D744839CFCA657.e.103/css/display - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/element/f.D0B80ECAB6D2E4053D1A1A412522C9D1.d.2E9FA3563DEEDA53E22812F58A1E25AD.e.116/css/display - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should navigate to Insights page" time="4.997">
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should navigate to Insights page" time="5.068">
       <system-out><![CDATA[
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/title - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/title - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/url - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/url - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/title - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/title - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should navigate to Careers page" time="6.635">
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_the_global_navigation_menu_across_all_pages" name="should navigate to Careers page" time="8.194">
       <system-out><![CDATA[
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/title - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/title - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/url - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/url - {}
 RESULT: {}
-COMMAND: GET /session/896fb12a58ba4486b463704660626560/title - {}
+COMMAND: GET /session/82a13806ab240e590ef7cfd728ec4746/title - {}
 RESULT: {}
-COMMAND: DELETE /session/896fb12a58ba4486b463704660626560 - {}
+COMMAND: DELETE /session/82a13806ab240e590ef7cfd728ec4746 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

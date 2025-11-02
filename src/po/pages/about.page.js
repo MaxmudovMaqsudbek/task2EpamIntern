@@ -1,6 +1,6 @@
 const CookieBannerComponent = require("../components/common/cookie-banner.component");
 const BasePage = require("./base.page");
-class HomePage extends BasePage {
+class AboutPage extends BasePage {
     constructor(){
         super('/');
         this.cookieBanner = new CookieBannerComponent();
@@ -11,4 +11,4 @@ class HomePage extends BasePage {
     }
 }
 
-module.exports = HomePage;
+module.exports = AboutPage;

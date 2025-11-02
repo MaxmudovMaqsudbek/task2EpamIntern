@@ -8,7 +8,6 @@ class CookieBannerComponent  extends BaseComponent {
     async acceptAllCookies(){
         await this.rootEl.waitForDisplayed({ timeout: 5000 });
         await this.rootEl.click();
-        //await browser.pause(ANIMATION_DELAY);
     }
 }
 

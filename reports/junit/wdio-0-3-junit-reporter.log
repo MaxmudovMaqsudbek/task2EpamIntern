@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="1" failures="0" errors="0" skipped="0">
-  <testsuite name="Verify Home page title" timestamp="2025-11-03T04:15:09" time="7.028" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Verify Home page title" timestamp="2025-11-03T04:32:26" time="9.242" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Verify Home page title"/>
       <property name="capabilities" value="chrome.142_0_7444_60.windows"/>
       <property name="file" value="file:///C:/Users/user/Desktop/task2EpamIntern/src/specs/title.spec.js"/>
     </properties>
-    <testcase classname="chrome.142_0_7444_60.windows.Verify_Home_page_title" name="should have the correct page title" time="7.022">
+    <testcase classname="chrome.142_0_7444_60.windows.Verify_Home_page_title" name="should have the correct page title" time="9.238">
       <system-out><![CDATA[
-COMMAND: GET /session/e0e2932616f5d8e90760f10c65b1f286/element/f.D6B32642B55780E821B364168BEE618C.d.2FC7DA8B701DDABC705FB2E1E685FF61.e.12/css/display - {}
+COMMAND: GET /session/90c6ae4c45b5e6fee54e970fbc851dde/element/f.35B443E1ECC2C317CF142480278C3E33.d.A90076599A6DE71C8EAB21F17201351A.e.15/css/display - {}
 RESULT: {}
-COMMAND: POST /session/e0e2932616f5d8e90760f10c65b1f286/element/f.D6B32642B55780E821B364168BEE618C.d.2FC7DA8B701DDABC705FB2E1E685FF61.e.12/click - {}
+COMMAND: POST /session/90c6ae4c45b5e6fee54e970fbc851dde/element/f.35B443E1ECC2C317CF142480278C3E33.d.A90076599A6DE71C8EAB21F17201351A.e.15/click - {}
 RESULT: {}
-COMMAND: GET /session/e0e2932616f5d8e90760f10c65b1f286/title - {}
+COMMAND: GET /session/90c6ae4c45b5e6fee54e970fbc851dde/title - {}
 RESULT: {}
-COMMAND: GET /session/e0e2932616f5d8e90760f10c65b1f286/title - {}
+COMMAND: GET /session/90c6ae4c45b5e6fee54e970fbc851dde/title - {}
 RESULT: {}
-COMMAND: DELETE /session/e0e2932616f5d8e90760f10c65b1f286 - {}
+COMMAND: DELETE /session/90c6ae4c45b5e6fee54e970fbc851dde - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

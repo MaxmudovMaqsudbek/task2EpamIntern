@@ -1,17 +1,17 @@
-const HomePage = require('./home.page');
+const AboutPage = require('./about.page');
 /**
  * 
  * @param  name {'homepage' | 'careerspage'} 
- * @returns {HomePage | CareersPage}
+ * @returns {AboutPage | CareersPage}
  */
 function pages(name){
     const item = {
-        about: new HomePage(),
+        about: new AboutPage(),
     }
     return item[name.toLowerCase()];
 }
 
 module.exports = {
-    HomePage,
+    AboutPage,
     pages
 }
