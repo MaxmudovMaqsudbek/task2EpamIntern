@@ -48,9 +48,6 @@ describe("Verify language translation feature", () => {
     await expect(hasPolish).to.be.true;
   });
 
-
-
-
   it("should change language to Deutsch and update page", async () => {
     const langButton = await $("button.location-selector__button");
     await langButton.waitForExist({ timeout: 30000 });
