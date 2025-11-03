@@ -22,30 +22,16 @@ describe("Verify the global navigation menu across all pages", () => {
 
   for (const page of pagesOfWebsite) {
     it(`should display navigation menu on ${page.name} page`, async () => {
-      const navMenu = await $("header .top-navigation-ui-23, header nav");
-      await navMenu.waitForDisplayed({ timeout: 5000 });
-      
-      const isVisible = await navMenu.isDisplayed();
-      expect(isVisible).to.be.true;
+      expect(await (await pages("about").getNavMenu()).isDisplayed()).to.be.true;
     });
   }
 
   it("should navigate to Insights page", async () => {
-    const insightsLink = await $("a[href='/insights']");
-    await insightsLink.waitForExist({ timeout: 5000 });
-    
-    await browser.execute((el) => el.click(), insightsLink);
-    const title = await browser.getTitle();
-    expect(title).to.match(/Insights/i);
-});
+    expect(await pages("about").titleInsights()).to.match(/Insights/i);
+  });
 
-it("should navigate to Careers page", async () => {
-    const careersLink = await $("a[href='/careers']");
-    await careersLink.waitForExist({ timeout: 5000 });
-    
-    await browser.execute((el) => el.click(), careersLink);
-    const title = await browser.getTitle();
-    title.should.match(/Careers/i);
-});
+  it("should navigate to Careers page", async () => {
+    expect(await pages("about").titleCareers()).to.match(/Careers/i);
+  });
   
 });
