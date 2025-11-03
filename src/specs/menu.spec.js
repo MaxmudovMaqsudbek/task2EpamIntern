@@ -22,7 +22,9 @@ describe("Verify the global navigation menu across all pages", () => {
 
   for (const page of pagesOfWebsite) {
     it(`should display navigation menu on ${page.name} page`, async () => {
-      expect(await (await pages("about").getNavMenu()).isDisplayed()).to.be.true;
+      const nav = await pages('about').getNavMenu();
+      const visible = await nav.isDisplayed();
+      expect(visible).to.be.true;
     });
   }
 

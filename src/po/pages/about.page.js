@@ -1,3 +1,4 @@
+const LanguageComponent = require("../components/about/language.component");
 const ThemeComponent = require("../components/about/theme.component");
 const GetBrowserTitleComponent = require("../components/about/title.component");
 const HeaderNavbarMenuComponent = require("../components/common/header-navbarmenu.component");
@@ -8,6 +9,7 @@ class AboutPage extends BasePage {
         this.title = new GetBrowserTitleComponent();
         this.theme = new ThemeComponent();
         this.navMenu = new HeaderNavbarMenuComponent();
+        this.language = new LanguageComponent();
     }
 
      async getTitle(){
@@ -15,10 +17,10 @@ class AboutPage extends BasePage {
     }
 
     async switchTheme(){
-        return await this.theme.switchTheme();
+        return await this.theme.toggleTheme();
     }
 
-    async getInitialclass(){
+    async getInitialClass(){
         return await this.theme.initialClass();
     }
 
@@ -31,6 +33,18 @@ class AboutPage extends BasePage {
     }
     async titleInsights(){
         return await this.navMenu.getTitleInsights();
+    }
+
+    async listLanguageItems(){
+        return await this.language.listItems();
+    }
+
+    async hasPolishLanguage(){
+        return await this.language.hasThisLanguage('Polska (Polski)');
+    }
+
+    async checkDeutschLanguage(){
+        return await this.language.checkDeutschUrl();
     }
 
 }
