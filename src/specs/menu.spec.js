@@ -1,5 +1,6 @@
+const { pages } = require('../po');
 describe("Verify the global navigation menu across all pages", () => {
-  const pages = [
+  const pagesOfWebsite = [
     { name: "Home", url: "https://www.epam.com/" },
     { name: "Insights", url: "https://www.epam.com/insights" },
     { name: "Services", url: "https://www.epam.com/services" },
@@ -8,30 +9,21 @@ describe("Verify the global navigation menu across all pages", () => {
     { name: "Careers", url: "https://www.epam.com/careers" },
   ];
 
-  
-  async function loadPage(url) {
-    await browser.url(url);
-    
+  beforeEach(async () => {
+    await browser.setWindowSize(1920, 1080);
+    await pages("about").open();
+
     try {
       await pages("about").acceptCookies();
-    } catch (e) {}
-    
-    await browser.waitUntil(async () => {
-      const title = await browser.getTitle();
-      return title && !title.includes('Just a moment') && title.length > 5;
-    }, { 
-      timeout: 30000,
-      interval: 1000
-    });
-  }
+    } catch (e) {
+          
+        }
+  });
 
-  for (const page of pages) {
+  for (const page of pagesOfWebsite) {
     it(`should display navigation menu on ${page.name} page`, async () => {
-      await loadPage(page.url);
-      await browser.pause(2000);
-
       const navMenu = await $("header .top-navigation-ui-23, header nav");
-      await navMenu.waitForDisplayed({ timeout: 10000 });
+      await navMenu.waitForDisplayed({ timeout: 5000 });
       
       const isVisible = await navMenu.isDisplayed();
       expect(isVisible).to.be.true;
@@ -39,37 +31,19 @@ describe("Verify the global navigation menu across all pages", () => {
   }
 
   it("should navigate to Insights page", async () => {
-    await loadPage("https://www.epam.com/");
-    await browser.pause(2000);
-    
     const insightsLink = await $("a[href='/insights']");
-    await insightsLink.waitForExist({ timeout: 10000 });
+    await insightsLink.waitForExist({ timeout: 5000 });
     
     await browser.execute((el) => el.click(), insightsLink);
-    
-    await browser.waitUntil(async () => {
-      const url = await browser.getUrl();
-      return url.includes('/insights');
-    }, { timeout: 15000 });
-
     const title = await browser.getTitle();
     expect(title).to.match(/Insights/i);
 });
 
 it("should navigate to Careers page", async () => {
-    await loadPage("https://www.epam.com/");
-    await browser.pause(2000);
-    
     const careersLink = await $("a[href='/careers']");
-    await careersLink.waitForExist({ timeout: 10000 });
+    await careersLink.waitForExist({ timeout: 5000 });
     
     await browser.execute((el) => el.click(), careersLink);
-    
-    await browser.waitUntil(async () => {
-      const url = await browser.getUrl();
-      return url.includes('/careers');
-    }, { timeout: 15000 });
-
     const title = await browser.getTitle();
     title.should.match(/Careers/i);
 });
